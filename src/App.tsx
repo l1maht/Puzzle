@@ -8,6 +8,7 @@ function App() {
 
 	const handleSizeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		const newSize = parseInt(event.target.value, 10);
+
 		if (!isNaN(newSize) && newSize > 0) {
 			setSize(newSize);
 			setStates(Array.from({ length: newSize }, () => Array(newSize).fill(false)));
