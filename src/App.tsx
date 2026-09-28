@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 
-function App() {
+const App = () => {
 	const [size, setSize] = useState<number>(8);
 	const [states, setStates] = useState<boolean[][]>(Array.from({ length: size }, () => Array(size).fill(false)));
 	const [isSolved, setIsSolved] = useState<boolean>(false);
@@ -63,6 +63,6 @@ function App() {
 			</div>
 		</>
 	);
-}
+};
 
 export default App;
