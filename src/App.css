@@ -1,0 +1,99 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	height: 100vh;
+	width: 100vw;
+	color: #fff;
+	background-color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.size {
+	width: 75vh;
+	height: 7.5vh;
+	margin-bottom: 2vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.size span {
+	font-size: 5vh;
+	margin-right: 2vw;
+	font-weight: bold;
+}
+
+.size input {
+	background-color: #282828;
+	color: #fff;
+	border: none;
+	border-radius: 0.5rem;
+	width: 10vw;
+	font-size: 5vh;
+	text-align: center;
+	height: 6vh;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 75vh;
+	aspect-ratio: 1;
+}
+
+.button {
+	background-color: #282828;
+	border: 1px solid #2e2e2e;
+	aspect-ratio: 1;
+}
+
+.button:hover {
+	background-color: #444;
+}
+
+.active {
+	background-color: #0f0;
+}
+
+.active:hover {
+	background-color: rgb(18, 211, 18);
+}
+
+.solved-message {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.solved-message h2 {
+	font-size: 8vh;
+	margin-bottom: 1vh;
+}
+
+.solved-message p {
+	font-size: 5vh;
+	margin-bottom: 5vh;
+}
+
+.solved-message button {
+	background-color: #0f0;
+	padding: 0.5rem 1rem;
+	font-size: 4vh;
+	cursor: pointer;
+	border: none;
+	border-radius: 0.5rem;
+}
+
+.solved-message button:hover {
+	background-color: rgb(18, 211, 18);
+}
